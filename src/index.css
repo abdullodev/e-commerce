@@ -47,7 +47,6 @@ body {
   position: relative;
   transition: 0.2s ease-in;
 }
-/* BTNS style */
 
 .my_btn {
   position: relative;
@@ -93,7 +92,6 @@ body {
 .home.active {
   background-color: var(--back-whiteroq);
 }
-/* Top Bar styles */
 .warn_box {
   font-size: 1.1rem;
   color: var(--text-danger);
@@ -144,7 +142,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Header styles */
 .header {
   position: sticky;
   top: 0;
@@ -442,7 +439,6 @@ body {
   overflow-y: auto;
   background-color: #002f34;
 }
-/* Home content */
 
 .home .home_content {
   min-height: 100vh;
@@ -592,13 +588,10 @@ body {
   border-radius: 10px;
   transition: 0.2s ease-in;
 }
-/* .filter_box .filter_list li .category_menu:hover {
-  background-color: var(--back-green-hover);
-} */
+
 .all_product_title.active {
   display: none;
 }
-/* Products style */
 .all_products {
   position: relative;
   height: 100%;
@@ -793,7 +786,6 @@ body {
   font-weight: 500;
   color: var(--text-black);
 }
-/* Autorozatsiya style */
 .auto_back {
   position: fixed;
   top: 0;
@@ -927,8 +919,6 @@ body {
   text-decoration: underline;
 }
 
-/* Footer style */
-
 .footer_container {
   background-color: var(--back-black);
   width: 100%;
@@ -1055,7 +1045,6 @@ body {
 .footer_bottom h5 {
   color: var(--back-whiteroq);
 }
-/* FetchProduct style */
 .fetch_product {
   width: 100%;
   min-height: 100vh;
@@ -1231,9 +1220,6 @@ body {
   background-color: var(--back-danger-hover);
 }
 
-*/
-/* Loading style */
-
 .pt_loading {
   display: flex;
   justify-content: center;
@@ -1252,7 +1238,6 @@ body {
   border: 1px solid var(--back-danger);
   background-color: var(--back-danger-hover);
 }
-/* Cart style */
 
 .cart_container {
   width: 100%;
@@ -1489,7 +1474,6 @@ body {
 .calc_btn_box .calc_btn:hover::before {
   background-color: var(--back-danger-hover);
 }
-/* likes style */
 
 .likes {
   width: 100%;
@@ -1640,7 +1624,6 @@ body {
 .like_event_btn .like_pt_delete {
   font-size: 1.15rem;
 }
-/* Media style */
 
 @media (max-width: 1250px) {
   .home .home_content {
@@ -1840,7 +1823,6 @@ body {
     font-size: 0.72rem !important;
   }
 }
-/* Navbar menu responsive */
 .navbar_responsive {
   position: fixed;
   top: 0;
