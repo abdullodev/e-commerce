@@ -38,7 +38,6 @@ const ProductProvider = ({ children }: Props) => {
       const data = await response.json();
       setSingleProduct(data);
     } catch (error) {
-      console.log(error);
       setErr(error);
     } finally {
       setIsProductCome(false);
@@ -53,7 +52,6 @@ const ProductProvider = ({ children }: Props) => {
       const data = await response.json();
       setCategory(data);
     } catch (error) {
-      console.log(error);
       setErr(error);
     } finally {
       setIsLoading(false);
@@ -70,7 +68,6 @@ const ProductProvider = ({ children }: Props) => {
       setProducts(data.products);
       setSearchedProducts(data.products);
     } catch (error) {
-      console.log(error);
       setErr(error);
     } finally {
       setIsLoading(false);
@@ -198,8 +195,6 @@ const ProductProvider = ({ children }: Props) => {
     setCartItems(newCarts);
     localStorage.setItem("cart", JSON.stringify(newCarts));
     totalAmountFunc();
-
-    console.log(newCarts);
   };
 
   // increase count function

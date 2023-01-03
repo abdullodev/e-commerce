@@ -27,7 +27,6 @@ const Filter: FC = () => {
   const [search, setSearch] = useState<string>("");
   const [searchedCategory, setSearchedCategory] = useState<string[]>([]);
 
-  // console.log(category);
   const filterCategory = (e: any) => {
     setSearch(e.target.value);
     let allProduct = document.querySelector(".all_product_title");

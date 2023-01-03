@@ -86,7 +86,7 @@ const Cart = () => {
         <div className="cart_calc_content">
           <div className="calc_header">
             <div className="cart_calc_title">
-              <h3>Total Count: {cartItems.length}</h3>
+              <h3>Product Count: {cartItems.length}</h3>
             </div>
             <div className="all_amount">
               <h2>Total Amount:</h2>
