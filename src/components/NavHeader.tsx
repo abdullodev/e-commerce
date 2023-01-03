@@ -83,8 +83,7 @@ const NavHeader: FC<Props> = ({
         <div className="header_logo">
           <Link to="/">
             <div className="logo" onClick={fethAllProduct}>
-              {/* <img src={logo} alt="logo" height="65" /> */}
-              <h3>Logo</h3>
+              <img src={logo} alt="logo" height="65" />
             </div>
           </Link>
         </div>
