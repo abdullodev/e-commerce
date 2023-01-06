@@ -5,6 +5,8 @@ import { FaHeart } from "react-icons/fa";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../context/ProductContext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 type Props = {
   product: ProductType;
@@ -39,7 +41,11 @@ const Product: FC<Props> = ({ product }) => {
           </div>
           <Link to={`/product/${product.id}`}>
             <div className="product_img_container">
-              <img src={product.thumbnail} alt={product.brand} />
+              <LazyLoadImage
+                alt={product.thumbnail}
+                effect="blur"
+                src={product.thumbnail}
+              />
             </div>
             <div className="product_title">{onlyTitle}</div>
           </Link>

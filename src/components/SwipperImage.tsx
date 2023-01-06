@@ -2,6 +2,8 @@ import React, { FC, useContext, useRef, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCube, Pagination } from "swiper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -38,7 +40,8 @@ const SwipperImage: FC<Props> = ({ images, id }) => {
       >
         {images?.map((img, index) => (
           <SwiperSlide key={index} className="swipper_slide">
-            <img src={img} alt="image" className="swipper_img" />
+            {/* <img src={img} alt="image" className="swipper_img" /> */}
+            <LazyLoadImage alt={img} effect="blur" src={img} />
           </SwiperSlide>
         ))}
       </Swiper>
